@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>People</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/Person.js"></script>
+  <script src="js/SavePersonForm.js"></script>
+  <script src="js/ListPeople.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Admin Tools</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">People Tool</a></li>
+          <li><a href="#test">Tests</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div class="container" role="main">
+    <form id="savePersonForm" class="form-horizontal">
+      <fieldset>
+        <legend>Add Person</legend>
+        <div class="form-group">
+          <label class="col-md-2" for="fname">First Name</label>
+          <div class="col-md-2">
+            <input class="form-control" type="text" name="fname" id="fname" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-2" for="fname">Last Name</label>
+          <div class="col-md-2">
+            <input class="form-control" type="text" name="lname" id="lname" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-2" for="fname">HUID</label>
+          <div class="col-md-2">
+            <input class="form-control" type="text" name="huid" id="huid" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-md-offset-2 col-md-2">
+            <button type="submit" class="btn btn-default">Save</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+
+    <h2>List People</h2>
+    <div id="peopleList">
+    </div>
+  </div>
+
+</body>
+</html>
